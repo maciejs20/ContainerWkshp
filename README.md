@@ -23,11 +23,11 @@ version 1.0
 + Wrap Up
 
 **Day Two**
-+ Helm overview
++ _Helm overview_
   + Kubernetes & Helm **Lab** on ICP
   + [https://fdescollonges.github.io/4-KubernetesHelmOnICP/](https://fdescollonges.github.io/4-KubernetesHelmOnICP/)
   + <https://fdescollonges.github.io/5-HybridCloudLab/>
-+ Application Patterns
++ _Application Patterns_
   + MicroServices /Cloud Native Applications
   + Transformation Advisor
   + Devops : CI/CD
@@ -36,7 +36,7 @@ version 1.0
   + [https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/](https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/)
   + _Optional : IBM Cloud Toolchain / Pipeline **Demo**_
   + [https://fdescollonges.github.io/7-ToolchainLab/](https://fdescollonges.github.io/7-ToolchainLab/)
-+ Monitoring
++ _Monitoring_
 
   + _**Demos** Prometheus / Grafana_
 + Wrap Up
