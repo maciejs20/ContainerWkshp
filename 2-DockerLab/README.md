@@ -4,7 +4,7 @@
 # Docker Labs
 ---
 
-![Docker Logo](./images/docker2.png)
+![Docker Logo](./../images/docker2.png)
 
 
 
@@ -159,7 +159,7 @@ hello-world         latest              fce289e99eb9        3 weeks ago         
 
 Go to `https://hub.docker.com/_/hello-world/` and you can read about this image. Docker-hub is a registry that holds docker images for use. Docker-hub is not the only registry, IBM Cloud Public can serve as a docker registry. You can also have (or define) private registries.
 
-![dockerHub](./images/dockerhubhello.png) 
+![dockerHub](./../images/dockerhubhello.png) 
 
 
 
@@ -639,7 +639,7 @@ http://localhost:8081/
 
 
 
-![Launching the web server](./images/nginx2.png)
+![Launching the web server](./../images/nginx2.png)
 
 ###3. Troubleshooting containers  
 

@@ -1,6 +1,6 @@
 # IBM Cloud Container Workshop
 
-![ICP Logo](./images/logoicp.png)
+![ICP Logo](./../images/logoicp.png)
 
 ---
 
@@ -11,7 +11,7 @@
 
 This lab is compatible with ICP version 3.1.2
 
-![image-20181130211541303](images/image-20181130211541303.png)
+![image-20181130211541303](../images/image-20181130211541303.png)
 
 
 
@@ -62,7 +62,7 @@ This lab is compatible with ICP version 3.1.2
 
 See below a global picture showing ICP architecture and most common components.
 
-![Architecture](images/architecture.png)
+![Architecture](../images/architecture.png)
 
 This lab is going to focus on "Docker / Kubernetes / Helm" which are the main foundation of IBM Cloud Private. 
 
@@ -84,15 +84,15 @@ From your web browser, go the following address where *ipaddress* is the IP your
 
 **Password** : admin1!
 
-![Loginicp](images/loginicp.png)
+![Loginicp](../images/loginicp.png)
 
 You should receive the **Welcome Page**:
 
-![Welcome to ICP](/images/Welcome.png)
+![Welcome to ICP](../images/Welcome.png)
 
 Click on the **Catalog** menu (top right) to look at the list of applications already installed:
 
-![Menu](images/Hamburger.png)
+![Menu](../images/Hamburger.png)
 
 The **Catalog** shows Charts that you can visit (it could take au few seconds to refresh the first time)
 
@@ -452,7 +452,7 @@ Change the *ipaddress* depending on you hosts file. Create a security exception 
 
 View your image using `Menu > Container Images`
 
-![image list](images/imagelist.png)
+![image list](../images/imagelist.png)
 
 
 ### 7. Run your first deployment
@@ -523,7 +523,7 @@ From that output, write down the nodePort (i.e. 30330 in that case).
 
 Open a web browser window and go to the URL of your master node with your NodePort number, such as `http://ipaddress:30330`. Your output should look like this.
 
- ![image-20181130164615038](images/image-20181130164615038.png)
+ ![image-20181130164615038](../images/image-20181130164615038.png)
 
 
 ### 11. Application troubleshooting 
@@ -774,7 +774,7 @@ Take a note of the NodePort in the description. The NodePord is working against 
 
 Perform a curl `http://ipaddress:<nodeport>` to confirm your new code is active or open a browser and you see "Great Job for the second stage".
 
-![image-20181206113207582](images/image-20181206113207582.png)
+![image-20181206113207582](../images/image-20181206113207582.png)
 
 # Task 4: Understand Kubernetes manifests
 
@@ -877,7 +877,7 @@ Type https://ipaddress:8443
 	- Click on the `default/hello-world`
 	- Check version 2 and Latest are in the Tags
 
-![New version](./images/version.png)
+![New version](./../images/version.png)
 
 ### 3. Analyse a Kubernetes manifest
 
@@ -961,11 +961,11 @@ spec:
 
 - Go to  `https://<<ipaddress>>:8443/console/workloads/deployments`  (all columns must show 3) 
 
-  ![1553682422885](images/1553682422885.png)
+  ![1553682422885](../images/1553682422885.png)
 
 - click on **Launch** link to check the application has been successfully deployed
 
-![1553682535675](images/1553682535675.png)
+![1553682535675](../images/1553682535675.png)
 
 After a will, you can see various number for Read and Available columns due to the health check that is failing (on purpose by the application), and growing again to 3 after a while.
 
@@ -1094,7 +1094,7 @@ Login Succeeded
 `tree .`
 
 
-![create tree](./images/treehelm.png)
+![create tree](./../images/treehelm.png)
 
 
 
@@ -1277,7 +1277,7 @@ Go back to the hellonginx path and check the validity of the helm chart.
 
 `helm lint`
 
-![modify chart](images/lint.png)
+![modify chart](../images/lint.png)
 
 In case of error, you can :
 
@@ -1302,11 +1302,11 @@ You can use the command line to create a new namespace or you can use the IBM Cl
 - Select __Namespaces__ then click __Create namespace__
 
 
-![Organization menu](images/namespaces.png)
+![Organization menu](../images/namespaces.png)
 
   - Specify the namespace of `training` , select `ibm-anyuid-psp` as Pod Security Policy and click __Create__
 
-    ![1553684355637](images/1553684355637.png)
+    ![1553684355637](../images/1553684355637.png)
 
     Pod Security Policies enable fine-grained authorization of pod creation and updates. The `PodSecurityPolicy` objects define a set of conditions that a pod must run with in order to be accepted into the system, as well as defaults for the related fields. It is define at cluster level, but can be applied globally or to a specified namespace. 
 
@@ -1371,7 +1371,7 @@ You should use the following  url:
 
 Try this url and get the nginx hello:
 
-![Welcome Nginx](./images/nginx.png)
+![Welcome Nginx](./../images/nginx.png)
 
 
 ### 3. List the releases
@@ -1499,15 +1499,15 @@ Leave the terminal and login to the ICP console with admin/admin :
 
 - Find the `hellonginx` chart from Catalog
 
-![search hello](images/hellonginx2.png)
+![search hello](../images/hellonginx2.png)
 
 - Click on the `hellonginx` chart to get access to configuration.
 
-![hello chart](images/hellonginx3.png)
+![hello chart](../images/hellonginx3.png)
 
 - Click **configure** to see the parameters:
 
-![hello chart](images/hellonginx4.png)
+![hello chart](../images/hellonginx4.png)
 
 Click on Parameters at the bottom of the first page. 
 Find and change the **release name**, the **namspace** and the **nodeport** (for example 30075)
@@ -1533,11 +1533,11 @@ Congratulations, you have successfully completed this Containers lab ! You've de
 You need to setup the endpoint to tell the kubectl command where is the ICP Cluster and what are the correct certificates.
 To do so, go to the ICP console and select your profile on the right hand:
 
-![Configure Client](images/Client.png)
+![Configure Client](../images/Client.png)
 
 Click on Configure client:
 
-![Configure Client](images/ClientSetup.png)
+![Configure Client](../images/ClientSetup.png)
 
 These 5 lines contain a token that change every **12 hours**. So then, you generally have to use these 5 commands to get connected.
 
@@ -1584,7 +1584,7 @@ error: You must be logged in to the server (Unauthorized)
 
 Results :
 
-![visecrets](images/visecrets.png)
+![visecrets](../images/visecrets.png)
 
 
 
@@ -1830,7 +1830,7 @@ http://ipaddress:8081/
 
 You should see :
 
-![NGINX](images/nginx2.png)  
+![NGINX](../images/nginx2.png)  
 
 
 

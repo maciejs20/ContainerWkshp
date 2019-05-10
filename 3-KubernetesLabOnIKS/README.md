@@ -4,7 +4,7 @@
 # Kubernetes Lab
 ---
 
-![kube2](images/kube2.png)
+![kube2](../images/kube2.png)
 
 ---
 
@@ -41,7 +41,7 @@ Kubernetes was developed by Google as part of the Borg project and handed off to
 
 Learn about the basics of how Kubernetes works with a little terminology.
 
-![](./images/descriptionk.png)
+![](./../images/descriptionk.png)
 
 **Cluster**
 
@@ -77,27 +77,27 @@ To create a lite cluster:
 
 From the Catalog, in the Containers category, click **Containers in Kubernetes Cluster**.
 
-![](./images/IBMcontainerservice.png)
+![](./../images/IBMcontainerservice.png)
 
 ## 2. Create the service
 
 To use that service, click the blue button(**create**) at the bottom:
 
-![](./images/createcluster.png)
+![](./../images/createcluster.png)
 
 
 ## 3.	Choose a region and a free Cluster
 
 Select **Free** for the cluster type and then the **London** location:
 
-![image-20190118145616303](images/image-20190118145616303-7819776.png)
+![image-20190118145616303](../images/image-20190118145616303-7819776.png)
 
 Keep **mycluster** as the name of your cluster
 
 The default cluster type is **free**. Next time, you can create a standard cluster and define additional customizations, like how many worker nodes are in the cluster.
 
 
-![image-20190118145903795](images/image-20190118145903795-7819943.png)
+![image-20190118145903795](../images/image-20190118145903795-7819943.png)
 
 
 ## 4.	Click Create Cluster. 
@@ -105,7 +105,7 @@ The default cluster type is **free**. Next time, you can create a standard clust
 
 The details for the cluster open, but the worker node in the cluster takes a few minutes (**around 10 minutes**) to provision. You can see the status of the worker node in the Worker nodes tab. When the status reaches Ready, your worker node is ready to be used. A green light will appear.
 
-![image-20190118150023069](images/image-20190118150023069-7820023.png)
+![image-20190118150023069](../images/image-20190118150023069-7820023.png)
 
 ## 5.	What is a lite cluster  
 
@@ -287,7 +287,7 @@ To test our new **private registry**, do the following steps:
 
 `ibmcloud cr image-list`
 
-![image-20190119190902844](images/image-20190119190902844-7921342.png)
+![image-20190119190902844](../images/image-20190119190902844-7921342.png)
 
 
 
@@ -313,7 +313,7 @@ Get and download this github repository into that directory :
 
 `git clone https://github.com/IBM/container-service-getting-started-wt.git`
 ​	
-![git](images/git.png)
+![git](../images/git.png)
 
 
 
@@ -391,21 +391,21 @@ latest: digest: sha256:4d754d9b243818185bb18a5b25f41bf1a2eb3ea7ad3efcdafbe1b2046
 
 Go to your IBM Cloud Console and click on the IBM Cloud icon on the top left part of the screen:
 
-![image list](images/IBMCloudDash.png)
+![image list](../images/IBMCloudDash.png)
 
 Then select **"mycluster"** to see the Kubernetes Cluster details.
 
 
-![image list](images/ClusterDet.png)
+![image list](../images/ClusterDet.png)
 
 > Now go to the Worker Nodes section (on the left pane) and **take a note** of the **public IP of that worker node** :
 
-![image list](images/publicip.png)
+![image list](../images/publicip.png)
 
 
 On the right part of the screen, **click the blue button** : Kubernetes Dashboard
 
-![deploy](images/kdash.png)
+![deploy](../images/kdash.png)
 
 You can look around in the dashboard to see all the different resources (pods, nodes ...) or  the workloads (deployments, services ...).
 
@@ -425,7 +425,7 @@ deployment "hello1-deployment" created
 ```
 You can also look at the dashboard to see the deployment:
 
-![expose service](images/deployk.png)
+![expose service](../images/deployk.png)
 
 ### 7. Create a service 
 
@@ -443,7 +443,7 @@ service "hello1-service" exposed
 
 And you can also go to the dashboard :
 
-![expose service](images/servicek.png)
+![expose service](../images/servicek.png)
 
 
 ### 8. NodePort type
@@ -476,7 +476,7 @@ Events:                   <none>
 
 Or look at the dashboard:
 
-![Describe](images/describek.png)
+![Describe](../images/describek.png)
 
  
 
@@ -485,7 +485,7 @@ Or look at the dashboard:
 
 Yours may be different. Open a Firefox browser window or tab and go to the URL of your node with your NodePort number, such as `http://159.122.181.117:32509`. Your output should look like this.
 
-![Helloworld](images/browser1.png)
+![Helloworld](../images/browser1.png)
 
 ### 10. Application troubleshooting 
 
@@ -741,7 +741,7 @@ Create a new service:
 
 Collect the NodePort and test your new code :
 
-![New Application up and running](./images/NewApp.png)
+![New Application up and running](./../images/NewApp.png)
 
 
 

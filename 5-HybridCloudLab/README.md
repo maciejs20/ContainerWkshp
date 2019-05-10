@@ -6,7 +6,7 @@ This example shows how to build a simple hybrid multi-tier web application using
 
 The application consists of a web front end, Redis master for storage, and replicated set of Redis slaves, all for which we will create Kubernetes deployments, pods, and services and an sentiment analyzer service which is connected to IBM Watson Tone Analyzer service on IBM Cloud
 
-![1553853175594](images/1553853175594.png)
+![1553853175594](../images/1553853175594.png)
 
 ##### Table of Contents
 
@@ -418,11 +418,11 @@ configmap/env-ibmcloud-configmap created
   ```
 3. Go in IBM Cloud Private console to see the Secrets and ConfigMaps that has been created
 
-     ![1553857179051](images/1553857179051.png)
+     ![1553857179051](../images/1553857179051.png)
 
-  ![1553857261708](images/1553857261708.png)
+  ![1553857261708](../images/1553857261708.png)
 
-  ![1553858138718](images/1553858138718.png)
+  ![1553858138718](../images/1553858138718.png)
 
 4. Deploy the analyzer application to ICP
 
@@ -525,13 +525,13 @@ You can now play with the guestbook that you just created by opening it in a bro
 
 2. Open Deployments : 
 
-   ![1553847844339](images/1553847844339.png)
+   ![1553847844339](../images/1553847844339.png)
 
 3. Click `Launch` at the end of the guestbook-v2 line : 
 
-4. ![1553848106739](images/1553848106739.png)
+4. ![1553848106739](../images/1553848106739.png)
 
-![1553847697367](images/1553847697367.png)
+![1553847697367](../images/1553847697367.png)
 
 **Congratulations : The guestbook displays in your browser**
 
@@ -561,7 +561,7 @@ service "redis-slave" deleted
 
 Challenge : Deploy the Hybrid application using the following architecture :
 
-![1553853690110](images/1553853690110.png)
+![1553853690110](../images/1553853690110.png)
 
 
 

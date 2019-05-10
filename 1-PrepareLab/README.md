@@ -4,7 +4,7 @@
 # Preparing the labs
 ---
 
-![image-20181018184328603](images/image-20181018184328603.png)
+![image-20181018184328603](../images/image-20181018184328603.png)
 
 
 
@@ -27,7 +27,7 @@ So before you can start any labs, you should have satisfied the following prereq
 
 This web site will give you a temporary email address for 10 minutes :
 
-![image-20190118103132743](images/image-20190118103132743-7803892.png)
+![image-20190118103132743](../images/image-20190118103132743-7803892.png)
 
 From that screen,  you can use this temporaty email address (cugebezaza@utooemail.com for example) for the time to register to the IBM Cloud. 
 
@@ -36,7 +36,7 @@ If you don't have already registered to **IBM Cloud**,
 Open this link  [IBM Cloud](https://cloud.ibm.com/) or type https://cloud.ibm.com/ in your favorite internet browser.
 
 
-![image-20190118101459166](images/image-20190118101459166-7802899.png)
+![image-20190118101459166](../images/image-20190118101459166-7802899.png)
 
 ### Fill in the form
 Specify last name, first name, country, phone number and password.
@@ -44,38 +44,38 @@ Specify last name, first name, country, phone number and password.
 
 Click on **Create Account** button.
 
-![image-20190118103712268](images/image-20190118103712268-7804232.png) 
+![image-20190118103712268](../images/image-20190118103712268-7804232.png) 
 
 
 Then if everything is fine, you will receive the following page:
 
-![Thanks](./images/a003.png)
+![Thanks](./../images/a003.png)
 
 
 ### Confirm your registration to IBM Cloud from your inbox
 From your email application , you should have received an email from the IBM Cloud:
 
-![image-20190118103917487](images/image-20190118103917487-7804357.png)
+![image-20190118103917487](../images/image-20190118103917487-7804357.png)
 
 Click on the link to confirm the account:
 
-![image-20190118104115473](images/image-20190118104115473-7804475.png)
+![image-20190118104115473](../images/image-20190118104115473-7804475.png)
 
 Log in to IBM Cloud with your credentials :
 
-![Success Sign up](./images/a005.png)
+![Success Sign up](./../images/a005.png)
 
 Then type your password and click **Continue**
 
-![image-20190118104305743](images/image-20190118104305743-7804585.png)
+![image-20190118104305743](../images/image-20190118104305743-7804585.png)
 
 Type your password and click Login button:
 
-![image-20190118104419179](images/image-20190118104419179-7804659.png)
+![image-20190118104419179](../images/image-20190118104419179-7804659.png)
 
 You should see the following **Dashboard**:
 
-![image-20190118104520085](images/image-20190118104520085-7804720.png)
+![image-20190118104520085](../images/image-20190118104520085-7804720.png)
 
 You are now connected (and registred) to the IBM Cloud.
 
@@ -88,7 +88,7 @@ Check if you can access to **Containers in Kubernetes Clusters**.
 To do so, click on **Catalog** and click on **Containers** on the left pane of the page :
 
 
-![Showing Containers](./images/showcontainers.png)
+![Showing Containers](./../images/showcontainers.png)
 
 > **IMPORTANT** : If you just see **Container Registry** and not the Containers in Kubernetes Clusters, then **you will need a promo code !!!**
 
@@ -99,26 +99,26 @@ To install a promo code, follow the procedure :
 Go to **Manage >Account > Account Settings** and press enter.
 
 
-![image-20190118112618467](images/image-20190118112618467-7807178.png)
+![image-20190118112618467](../images/image-20190118112618467-7807178.png)
 
 You should get the following section in the **account setting page**  :
 
-![image-20190118112743476](images/image-20190118112743476-7807263.png)
+![image-20190118112743476](../images/image-20190118112743476-7807263.png)
 
 Click **Apply Code** button.
 
 
-![image-20190118112849245](images/image-20190118112849245-7807329.png)
+![image-20190118112849245](../images/image-20190118112849245-7807329.png)
 
 Enter your **promo code** and click **Apply** 
 
-![Apply Promo Code](./images/applypromo2.png)
+![Apply Promo Code](./../images/applypromo2.png)
 
 > Close this window and **logout / login** to your account.
 
 Go back to the **Catalog** and check that now you have access to **Containers in Kubernetes Clusters** and the Container Registry.
 
-![Kubernetes](./images/kcheck.png)
+![Kubernetes](./../images/kcheck.png)
 
 # Task 3. Install Docker Desktop on your Mac
 
@@ -128,17 +128,17 @@ Docker Desktop for Mac is favailable for free.
 
 https://store.docker.com/editions/community/docker-ce-desktop-mac
 
-![image-20190118113648920](images/image-20190118113648920-7807808.png)
+![image-20190118113648920](../images/image-20190118113648920-7807808.png)
 
 Click on the blue button **Please Login to Download**. If you are not registred to the Docker site, then create an account. Then when you are registered and logged in, click on the **Get Docker ** button.
 
-![image-20190118113959736](images/image-20190118113959736-7807999.png)
+![image-20190118113959736](../images/image-20190118113959736-7807999.png)
 
 Double-click **Docker.dmg** to start the install process.
 
 When the installation completes and Docker starts, the whale in the top status bar shows that Docker is running, and accessible from a terminal.
 
-![Docker for Mac is ready](./images/install2docker.png)
+![Docker for Mac is ready](./../images/install2docker.png)
 
 Open a terminal and type :
 
@@ -180,15 +180,15 @@ Docker Desktop for Windows is available for free.
 
 https://store.docker.com/editions/community/docker-ce-desktop-windows
 
-![image-20190118115800766](images/image-20190118115800766-7809080.png)
+![image-20190118115800766](../images/image-20190118115800766-7809080.png)
 
 Click on the blue button **Please Login to Download**. If you are **not** registred to the Docker site, then create an account. Then when you are registered and logged in, click on the **Get Docker ** button.
 
-![image-20190118114556568](images/image-20190118114556568-7808356.png)
+![image-20190118114556568](../images/image-20190118114556568-7808356.png)
 
 Leave the default parameters: 
 
-![Docker for Windows](./images/dockerwindows2.png)
+![Docker for Windows](./../images/dockerwindows2.png)
 
 After download, install Docker Desktop:
 
@@ -242,7 +242,7 @@ For Windows:
 http://git-scm.com/download/win
 
 At some point during the installation, change to the **"Use Windows default console"** and continue the installation.
-![Git for Windows](./images/git2.png)
+![Git for Windows](./git2.png)
 
 
 
