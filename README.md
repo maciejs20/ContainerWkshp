@@ -6,16 +6,17 @@ version 1.0
 **Day One**
 + Introduction / IBM Cloud
 
-+ _Docker Overview and **Lab**_
++ Docker Overview and **Lab** :
   + [https://fdescollonges.github.io/1-PrepareLab/](https://fdescollonges.github.io/1-PrepareLab/)
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
+
 + Kubernetes overview
-    
+
 + Positioning and Offerings
     + ICp / Icp Hosted / IKS / CAC (MultiCloud)
 
 + IBM Cloud (Public) Container Service
-+ _Kubernetes **Lab** on IKS_
+  + Kubernetes **Lab** on IKS :
   + [https://fdescollonges.github.io/3-KubernetesLabOnIKS/](https://fdescollonges.github.io/3-KubernetesLabOnIKS/)
 + IBM Cloud Private Overview
   +   _Demo_
@@ -23,7 +24,7 @@ version 1.0
 
 **Day Two**
 + Helm overview
-  + _Kubernetes & Helm **Lab** on ICP_
+  + Kubernetes & Helm **Lab** on ICP
   + [https://fdescollonges.github.io/4-KubernetesHelmOnICP/](https://fdescollonges.github.io/4-KubernetesHelmOnICP/)
   + <https://fdescollonges.github.io/5-HybridCloudLab/>
 + Application Patterns
@@ -32,9 +33,9 @@ version 1.0
   + Devops : CI/CD
 + _DevOps **Lab**_
   + _Jenkins/Microclimate **Labs**_
-  + [https://fdescollonges.github.io/6-Microclimate%20and%20Jenkins%20Lab/](https://fdescollonges.github.io/6-Microclimate%20and%20Jenkins%20Lab/)
+  + [https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/](https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/)
   + _Optional : IBM Cloud Toolchain / Pipeline **Demo**_
-  + [https://fdescollonges.github.io/7-Toolchain%20Lab/](https://fdescollonges.github.io/7-Toolchain%20Lab/)
+  + [https://fdescollonges.github.io/7-ToolchainLab/](https://fdescollonges.github.io/7-ToolchainLab/)
 + Monitoring
 
   + _**Demos** Prometheus / Grafana_
