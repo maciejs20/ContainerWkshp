@@ -10,7 +10,7 @@ version 1.0
   + [https://fdescollonges.github.io/1-PrepareLab/](https://fdescollonges.github.io/1-PrepareLab/)
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
 + Kubernetes overview
-
+    
 + Positioning and Offerings
     + ICp / Icp Hosted / IKS / CAC (MultiCloud)
 
