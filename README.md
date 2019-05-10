@@ -1,4 +1,4 @@
-# IBM Cloud Container Workshop
+# IBM Cloud Containers Workshop
 
 version 1.0
 
@@ -36,9 +36,10 @@ version 1.0
   + [https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/](https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/)
   + _Optional : IBM Cloud Toolchain / Pipeline **Demo**_
   + [https://fdescollonges.github.io/7-ToolchainLab/](https://fdescollonges.github.io/7-ToolchainLab/)
-+ _Monitoring_
 
-  + _**Demos** Prometheus / Grafana_
++ _Monitoring_
+  + **Demos** Prometheus / Grafana
+
 + Wrap Up
 
 ---
