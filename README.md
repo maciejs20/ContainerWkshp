@@ -5,12 +5,15 @@ version 1.0
 ## Agenda
 **Day One**
 + Introduction / IBM Cloud
+
 + _Docker Overview and **Lab**_
   + [https://fdescollonges.github.io/1-PrepareLab/](https://fdescollonges.github.io/1-PrepareLab/)
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
 + Kubernetes overview
+
 + Positioning and Offerings
     + ICp / Icp Hosted / IKS / CAC (MultiCloud)
+
 + IBM Cloud (Public) Container Service
 + _Kubernetes **Lab** on IKS_
   + [https://fdescollonges.github.io/3-KubernetesLabOnIKS/](https://fdescollonges.github.io/3-KubernetesLabOnIKS/)
@@ -21,12 +24,8 @@ version 1.0
 **Day Two**
 + Helm overview
   + _Kubernetes & Helm **Lab** on ICP_
-
   + [https://fdescollonges.github.io/4-KubernetesHelmOnICP/](https://fdescollonges.github.io/4-KubernetesHelmOnICP/)
-
   + <https://fdescollonges.github.io/5-HybridCloudLab/>
-
-    
 + Application Patterns
   + MicroServices /Cloud Native Applications
   + Transformation Advisor
