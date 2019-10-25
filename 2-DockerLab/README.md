@@ -21,10 +21,13 @@ This set of instructions requires that docker is already installed and docker co
 
 ### 1. Check Docker version
 
-Launch a shell or a command line and confirm that docker is installed.
 
-The version number isn't particularly important.
-However, you can see both the client (CLI) and the server (engine).
+
+Login to Your provisioned server. Use Your IP address, as reveived from IBM staff.
+
+```ssh root@158.176.128.252```
+
+Launch a shell or a command line and confirm that docker is installed.
 
 `docker version`
 
@@ -51,10 +54,6 @@ Server: Docker Engine - Community
   OS/Arch:          linux/amd64
   Experimental:     true
 ```
-
-
-
-If you receive an error then go back to the **PrepareLab.md** document to install Docker on your system. 
 
 
 
@@ -435,7 +434,7 @@ First let's create a directory:
 
 `cd images`
 
-`nano Dockerfile`or `notepad Dockerfile` 
+`nano Dockerfile`or `notepad Dockerfile` or ```vi Dockerfile```
 
 Now type the following 2 lines:
 
@@ -594,7 +593,7 @@ Here are the steps:
 
 `cd webapp`
 
-`nano Dockerfile` or `notepad Dockerfile`
+`nano Dockerfile` or `notepad Dockerfile` or `vi Dockerfile`
 
 Now copy and paste the Dockerfile text (see above). Save the file.
 

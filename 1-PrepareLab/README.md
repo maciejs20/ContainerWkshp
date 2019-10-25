@@ -32,8 +32,9 @@ This web site will give you a temporary email address for 10 minutes :
 From that screen,  you can use this temporaty email address (cugebezaza@utooemail.com for example) for the time to register to the IBM Cloud. 
 
 ### Sign in to IBM Cloud
-If you don't have already registered to **IBM Cloud**,  
-Open this link  [IBM Cloud](https://cloud.ibm.com/) or type https://cloud.ibm.com/ in your favorite internet browser.
+If you don't have already registered to **IBM Cloud**, open this link  [IBM Cloud](https://cloud.ibm.com/registration?cm_mmc=IBM-MDS-Container1) or type https://cloud.ibm.com/registration?cm_mmc=IBM-MDS-Container1 in your favorite internet browser.
+
+
 
 
 ![image-20190118101459166](../images/image-20190118101459166-7802899.png)
@@ -82,19 +83,7 @@ You are now connected (and registred) to the IBM Cloud.
 > IMPORTANT : Take a note of your email address and your password.
 
 
-# Task 2. Apply a promo code (if necessary)
-
-Check if you can access to **Containers in Kubernetes Clusters**.
-To do so, click on **Catalog** and click on **Containers** on the left pane of the page :
-
-
-![Showing Containers](./../images/showcontainers.png)
-
-> **IMPORTANT** : If you just see **Container Registry** and not the Containers in Kubernetes Clusters, then **you will need a promo code !!!**
-
-> **IMPORTANT** : If you don't have a **promo code**, then ask IBM during the workshop. You can continue the other steps of this preparation and come back later to this step. However, to create a cluster, you will need a promo code.
-
-To install a promo code, follow the procedure : 
+# Task 2. Apply a promo code 
 
 Go to **Manage >Account > Account Settings** and press enter.
 
@@ -103,7 +92,7 @@ Go to **Manage >Account > Account Settings** and press enter.
 
 You should get the following section in the **account setting page**  :
 
-![image-20190118112743476](../images/image-20190118112743476-7807263.png)
+![image-20190118112743476](../images/promocode-enter.png)
 
 Click **Apply Code** button.
 
@@ -120,7 +109,7 @@ Go back to the **Catalog** and check that now you have access to **Containers in
 
 ![Kubernetes](./../images/kcheck.png)
 
-# Task 3. Install Docker Desktop on your Mac
+# Task 3. (NOT REQUIRED) Install Docker Desktop on your Mac
 
 Follow this procedure to install the latest Docker Desktop (ex Community Edition) on your Mac (**for Windows**, jump to the next session) 
 
@@ -172,7 +161,7 @@ Server: Docker Engine - Community
 > The Docker server contains the **Docker engine**(containerd) that controls running containers. 
 
 
-# Task 4. Install Docker Desktop on Windows
+# Task 4.  (NOT REQUIRED) Install Docker Desktop on Windows
 
 Follow this procedure to install the latest Docker Desktop (ex Community Edition) on Windows (for Mac, jump to the previous session) 
 
@@ -231,7 +220,7 @@ Server: Docker Engine - Community
 
 > The Docker server contains the **Docker engine** (containerd) that controls running containers. 
 
-# Task 5. Install Git on your laptop
+# Task 5.  (NOT REQUIRED) Install Git on your laptop
 
 To do so : 
 
@@ -246,7 +235,13 @@ At some point during the installation, change to the **"Use Windows default cons
 
 
 
-# Task 6. Install the ibmcloud commands
+# Task 6.  Install the ibmcloud commands
+
+
+
+Login to Your provisioned server. Use Your IP address, as reveived from IBM staff.
+
+```ssh root@158.176.128.252```
 
 The **ibmcloud** command line interface (CLI) provides a set of commands that are grouped by namespace for users to interact with IBM Cloud. In previous versions, the name of that command was "bluemix" or "bx".
 
@@ -406,7 +401,7 @@ container-service/kubernetes-service   0.1.581
 
 
 
-# Task 7. Login to IBM Cloud
+# Task 7.  Login to IBM Cloud
 
 For these labs, we have decided to login to the **London Data Center** (api.eu-gb.bluemix.net). 
 
@@ -417,30 +412,26 @@ Login to IBM Cloud with the ibmcloud command :
  And answer a few questions: email, password :
 
 ```console
-> ibmcloud login -a api.eu-gb.bluemix.net
-API endpoint: api.eu-gb.bluemix.net
+root@warsaw901:~# ibmcloud login -a api.eu-gb.bluemix.net
+API endpoint https://api.eu-gb.bluemix.net is going to be deprecated. Use https://cloud.ibm.com.
 
-Email> cugebezaza@utooemail.com
+API endpoint: https://cloud.ibm.com
+Region: eu-gb
 
-Password> 
-Authenticating...
-Credentials were rejected.
-Code: BXNIM0602E, message: The credentials you entered for the user 'cugebezaza@utooemail.com' are incorrect
+Email> kari@dmailpro.net
 
 Password> 
 Authenticating...
 OK
 
-Targeted account Philippe Smith's Account (828b1270b40247a897d94167c14051bc)
-
-Targeted resource group Default
+Targeted account Kiali Malli's Account (60b7082462f64beabb5dabae8a8b1b95)
 
                       
-API endpoint:      https://api.eu-gb.bluemix.net   
+API endpoint:      https://cloud.ibm.com   
 Region:            eu-gb   
-User:              cugebezaza@utooemail.com   
-Account:           Philippe Smith's Account (828b1270b40247a897d94167c14051bc)   
-Resource group:    Default   
+User:              kari@dmailpro.net   
+Account:           Kiali Malli's Account (60b7082462f64beabb5dabae8a8b1b95)   
+Resource group:    No resource group targeted, use 'ibmcloud target -g RESOURCE_GROUP'   
 CF API endpoint:      
 Org:                  
 Space:                
@@ -449,36 +440,37 @@ Tip: If you are managing Cloud Foundry applications and services
 - Use 'ibmcloud target --cf' to target Cloud Foundry org/space interactively, or use 'ibmcloud target --cf-api ENDPOINT -o ORG -s SPACE' to target the org/space.
 - Use 'ibmcloud cf' if you want to run the Cloud Foundry CLI with current IBM Cloud CLI context.
 
+
 ```
 
 
 
-And optionally, you can also specify the following ORG and SPACE with that command :
+Enter ibmcloud target command with Your email name (the same as You've used for IBM Cloud account creation):
 
-`ibmcloud target -o cugebezaza@utooemail.com -s dev`
+`ibmcloud target -o kari@dmailpro.net -s dev`
 
-or 
 
-`ibmcloud target --cf`
 
 Results:
 
  ```console 
-> ibmcloud target -o cugebezaza@utooemail.com -s dev
-Targeted Cloud Foundry (https://api.eu-gb.bluemix.net)
+root@warsaw901:~# ibmcloud target -o kari@dmailpro.net -s dev
+Targeted Cloud Foundry (https://api.eu-gb.cf.cloud.ibm.com)
 
-Targeted org cugebezaza@utooemail.com
+Targeted org kari@dmailpro.net
 
 Targeted space dev
+
+
                       
-API endpoint:      https://api.eu-gb.bluemix.net   
+API endpoint:      https://cloud.ibm.com   
 Region:            eu-gb   
-User:              cugebezaza@utooemail.com   
-Account:           Philippe Smith's Account (828b1270b40247a897d94167c14051bc)   
-Resource group:    Default   
-CF API endpoint:   https://api.eu-gb.bluemix.net (API version: 2.106.0)   
-Org:               cugebezaza@utooemail.com   
-Space:             dev   
+User:              kari@dmailpro.net   
+Account:           Kiali Malli's Account (60b7082462f64beabb5dabae8a8b1b95)   
+Resource group:    No resource group targeted, use 'ibmcloud target -g RESOURCE_GROUP'   
+CF API endpoint:   https://api.eu-gb.cf.cloud.ibm.com (API version: 2.141.0)   
+Org:               kari@dmailpro.net   
+Space:             dev  
 
  ```
 
