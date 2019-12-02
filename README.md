@@ -1,13 +1,13 @@
 # IBM Cloud Containers Workshop
 
-version 1.0
+version 1.5
 
 ## Agenda
 **Day One**
 + Introduction / IBM Cloud
-
++ Preparation Lab
+  + [https://github.com/maciejs20/fdescollonges.github.io/tree/master/1-PrepareLab](https://github.com/maciejs20/fdescollonges.github.io/tree/master/1-PrepareLab/)
 + Docker Overview and **Lab** :
-  + [https://fdescollonges.github.io/1-PrepareLab/](https://fdescollonges.github.io/1-PrepareLab/)
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
 
 + Kubernetes overview
