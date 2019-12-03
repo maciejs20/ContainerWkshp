@@ -6,22 +6,24 @@ version 1.5
 
 ## Agenda
 **Day One**
-+ Introduction / IBM Cloud
++ Introduction
 + Preparation Lab
   + [1-PrepareLab/README.html](1-PrepareLab/README.html)
-+ Docker Overview and **Lab** :
-  + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
+  
++ Docker Overview
 
-+ Kubernetes overview
++ Docker **Lab** :
+  + [2-DockerLab/README.md](2-DockerLab/README.md)
 
-+ Positioning and Offerings
-    + ICp / Icp Hosted / IKS / CAC (MultiCloud)
-
++ Orchestration and Kubernetes overview
++ Openshift overview
++
 + IBM Cloud (Public) Container Service
   + Kubernetes **Lab** on IKS :
-  + [https://fdescollonges.github.io/3-KubernetesLabOnIKS/](https://fdescollonges.github.io/3-KubernetesLabOnIKS/)
-+ IBM Cloud Private Overview
-  +   _Demo_
+  + [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
++ IBM Cloud Pak for Applications overview
++ IBM Cloud Pak for Multicloud overview
+  + Demo
 + Wrap Up
 
 **Day Two**
