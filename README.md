@@ -17,7 +17,7 @@ version 1.5
 
 + Orchestration and Kubernetes overview
 + Openshift overview
-+
+
 + IBM Cloud (Public) Container Service
   + Kubernetes **Lab** on IKS :
   + [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
@@ -28,21 +28,19 @@ version 1.5
 
 **Day Two**
 + _Helm overview_
++ Operators overview
   + Kubernetes & Helm **Lab** on ICP
-  + [https://fdescollonges.github.io/4-KubernetesHelmOnICP/](https://fdescollonges.github.io/4-KubernetesHelmOnICP/)
-  + <https://fdescollonges.github.io/5-HybridCloudLab/>
+  + [4-KubernetesHelmOnICP/README.md](4-KubernetesHelmOnICP/README.md)
+  + [5-HybridCloudLab/README.md](5-HybridCloudLab/README.md)
 + _Application Patterns_
   + MicroServices /Cloud Native Applications
   + Transformation Advisor
   + Devops : CI/CD
 + _DevOps **Lab**_
   + _Jenkins/Microclimate **Labs**_
-  + [https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/](https://fdescollonges.github.io/6-MicroclimateAndJenkinsLab/)
+  + [6-MicroclimateAndJenkinsLab/README.md]6-MicroclimateAndJenkinsLab/README.md)
   + _Optional : IBM Cloud Toolchain / Pipeline **Demo**_
-  + [https://fdescollonges.github.io/7-ToolchainLab/](https://fdescollonges.github.io/7-ToolchainLab/)
-
-+ _Monitoring_
-  + **Demos** Prometheus / Grafana
+  + [7-ToolchainLab/README.md](7-ToolchainLab/README.md)
 
 + Wrap Up
 
