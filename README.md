@@ -2,7 +2,6 @@
 
 version 1.5
 
-**This document is created for gitpages and the links does not work on github directly. Use directories instead!**
 
 ## Agenda
 **Day One**
@@ -19,8 +18,7 @@ version 1.5
 + Openshift overview
 
 + IBM Cloud (Public) Container Service
-  + Kubernetes **Lab** on IKS :
-  + [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
+  + Kubernetes **Lab** on IKS : [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
 + IBM Cloud Pak for Applications overview
 + IBM Cloud Pak for Multicloud overview
   + Demo
