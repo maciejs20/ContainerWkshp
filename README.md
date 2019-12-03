@@ -6,7 +6,7 @@ version 1.5
 **Day One**
 + Introduction / IBM Cloud
 + Preparation Lab
-  + [https://github.com/maciejs20/fdescollonges.github.io/tree/master/1-PrepareLab](https://github.com/maciejs20/fdescollonges.github.io/tree/master/1-PrepareLab/)
+  + [1-PrepareLab/1-PrepareLab/README.md](1-PrepareLab/1-PrepareLab/README.md)
 + Docker Overview and **Lab** :
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
 
