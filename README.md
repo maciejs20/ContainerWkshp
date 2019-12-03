@@ -6,7 +6,7 @@ version 1.5
 **Day One**
 + Introduction / IBM Cloud
 + Preparation Lab
-  + [1-PrepareLab/1-PrepareLab/README.md](1-PrepareLab/1-PrepareLab/README.html)
+  + [1-PrepareLab/1-PrepareLab/README.html](1-PrepareLab/1-PrepareLab/README.html)
 + Docker Overview and **Lab** :
   + [https://fdescollonges.github.io/2-DockerLab/](https://fdescollonges.github.io/2-DockerLab/)
 
