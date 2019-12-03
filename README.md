@@ -1,7 +1,8 @@
 # IBM Cloud Containers Workshop
 
 version 1.5
-This document is created for gitpages and the links does not work on github directly.
+
+*This document is created for gitpages and the links does not work on github directly.
 
 ## Agenda
 **Day One**
