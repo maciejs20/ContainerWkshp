@@ -445,7 +445,13 @@ Tip: If you are managing Cloud Foundry applications and services
 
 
 
-Enter ibmcloud target command with Your email name (the same as You've used for IBM Cloud account creation):
+Enter ibmcloud target command  **with Your** **email name** (the same as You've used for IBM Cloud account creation):
+
+
+
+`ibmcloud target -o <Your Email> -s dev`
+
+like:
 
 `ibmcloud target -o kari@dmailpro.net -s dev`
 
@@ -474,7 +480,58 @@ Space:             dev
 
  ```
 
+# Task 8 : Create your first Kubernetes cluster
 
+Kubernetes is an orchestration tool for scheduling app containers onto a cluster of compute machines. With Kubernetes, developers can rapidly develop highly available applications by using the power and flexibility of containers.
+
+Before you can deploy an app by using Kubernetes, start by **creating a cluster**. A cluster is a set of worker nodes that are organized into a network. The purpose of the cluster is to define a set of resources, nodes, networks, and storage devices that keep applications highly available.
+
+We will use this service later today.
+
+To create a lite cluster:
+
+## 1.  Select the IBM Kubernetes Service	
+
+From the Catalog, in the Containers category, click **Kubernetes Service**.
+
+![](./../images/IBMcontainerservice.png)
+
+## 2. Create the service
+
+To use that service, click the blue button(**create**) at the bottom:
+
+![](./../images/createcluster.png)
+
+
+## 3.	Choose a region and a free Cluster
+
+Select **Free** for the cluster type:
+
+![CreateIKS.png](../images/CreateIKS.png)
+
+Keep **mycluster** as the name of your cluster
+
+
+![image-20190118145903795](../images/image-20190118145903795-7819943.png)
+
+
+## 4.	Click Create Cluster. 
+
+The details for the cluster open, but the worker node in the cluster takes a few minutes (**around 10-15 minutes**) to provision. You can see the status of the worker node in the Worker nodes tab. When the status reaches Ready, your worker node is ready to be used. A green light will appear.
+
+We don't need to wait for provisioning to be finished, we will need it later today but not now!
+
+![ProvisioningInProgress.png](../images/ProvisioningInProgress.png)
+
+## 5.	What is a lite cluster  
+
+The lite cluster has one worker node with 2 CPU and 4 GB memory available for your apps to use for one month.
+
+The worker node is centrally monitored and managed by a dedicated and highly available **IBM-owned Kubernetes master** that controls and monitors all of the Kubernetes resources in the cluster. You can focus on your worker node and the apps that are deployed in the worker node without worrying about managing this master too.
+
+The resources that are required to run the cluster, such as **VLANS and IP addresses**, are managed in an **IBM-owned IBM Cloud** Infrastructure (SoftLayer) account. When you create a standard cluster, you manage these resources in your own IBM Cloud Infrastructure (SoftLayer) account. You can learn more about these resources when you create a standard cluster.
+
+**Tip**: Lite clusters that are created with a IBM Cloud free trial account are automatically removed after the free trial period ends or 30 days after creation, unless you upgrade to a IBM Cloud Pay-As-You-Go account.
 
 
 # Task 8. Conclusion
@@ -488,6 +545,7 @@ You finally went thru the following features :
 - [x] You installed Git
 - [x] You installed the ibmcloud commands
 - [x] You login to IBM Cloud successfully
+- [x] You started provisioning of Your kubernetes cluster
 - [x] You are ready for the labs
 ---
 # End of the lab

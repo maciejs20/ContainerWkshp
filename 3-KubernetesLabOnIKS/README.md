@@ -65,59 +65,9 @@ With IBM Cloud Kubernetes Service (IKS), you can define complex architectures th
 
 In this lab, we are not going to implement such a complex environment. 
 
-# Task 1 : Create your first cluster
+We will use the cluster that You have provisioned in the "Preparations" lab today.
 
-Kubernetes is an orchestration tool for scheduling app containers onto a cluster of compute machines. With Kubernetes, developers can rapidly develop highly available applications by using the power and flexibility of containers.
-
-Before you can deploy an app by using Kubernetes, start by **creating a cluster**. A cluster is a set of worker nodes that are organized into a network. The purpose of the cluster is to define a set of resources, nodes, networks, and storage devices that keep applications highly available.
-
-To create a lite cluster:
-
-## 1.  Select the IBM Kubernetes Service	
-
-From the Catalog, in the Containers category, click **Kubernetes Service**.
-
-![](./../images/IBMcontainerservice.png)
-
-## 2. Create the service
-
-To use that service, click the blue button(**create**) at the bottom:
-
-![](./../images/createcluster.png)
-
-
-## 3.	Choose a region and a free Cluster
-
-Select **Free** for the cluster type:
-
-![CreateIKS.png](../images/CreateIKS.png)
-
-Keep **mycluster** as the name of your cluster
-
-
-![image-20190118145903795](../images/image-20190118145903795-7819943.png)
-
-
-## 4.	Click Create Cluster. 
-
-
-The details for the cluster open, but the worker node in the cluster takes a few minutes (**around 10 minutes**) to provision. You can see the status of the worker node in the Worker nodes tab. When the status reaches Ready, your worker node is ready to be used. A green light will appear.
-
-![ProvisioningInProgress.png](../images/ProvisioningInProgress.png)
-
-## 5.	What is a lite cluster  
-
-The lite cluster has one worker node with 2 CPU and 4 GB memory available for your apps to use for one month.
-
-The worker node is centrally monitored and managed by a dedicated and highly available **IBM-owned Kubernetes master** that controls and monitors all of the Kubernetes resources in the cluster. You can focus on your worker node and the apps that are deployed in the worker node without worrying about managing this master too.
-
-The resources that are required to run the cluster, such as **VLANS and IP addresses**, are managed in an **IBM-owned IBM Cloud** Infrastructure (SoftLayer) account. When you create a standard cluster, you manage these resources in your own IBM Cloud Infrastructure (SoftLayer) account. You can learn more about these resources when you create a standard cluster.
-
-**Tip**: Lite clusters that are created with a IBM Cloud free trial account are automatically removed after the free trial period ends or 30 days after creation, unless you upgrade to a IBM Cloud Pay-As-You-Go account.
-
-
-
-# Task 2 : prepare your environment
+# Task 1 : prepare your environment
 
 Deploy and manage your own Kubernetes cluster in the cloud. You can automate the deployment, operation, scaling, and monitoring of containerized apps in a cluster of independent compute hosts called worker nodes.
 
@@ -135,7 +85,7 @@ On your laptop, you have to prepare your environment to be ready to use Kubernet
 
 Login to Your provisioned server. Use Your IP address, as reveived from IBM staff.
 
-```ssh root@158.176.128.252```
+```ssh root@<YOUR IP ADDRESS>```
 
 Launch a shell or a command line and confirm that docker is installed.
 
@@ -160,23 +110,14 @@ container-service/kubernetes-service   0.1.581
 
 If there is no container-registry and container service, ask Your IBM staff.
 
-### 3. (NOT REQUIRED) Install kubectl command line on your laptop
 
-**kubectl** is the command that controls Kubernetes objects and resources. This is just one exec file that you must put in the right library on your computer. 
-
-For complete functional compatibility, download the Kubernetes CLI version that matches the Kubernetes cluster version you plan to use. 
-
-> **Normally the kubectl installation has been done during the preparation lab.**
-
-
-
-### 4. Check kubectl 
+### 3. Check kubectl 
 
 type the following command :
 
 `kubectl version --short`
 
-And you should get version for your client :
+And you should get version for your client (exact version may differ, it's OK) :
 
 ``` bash
 $ kubectl version --short
@@ -189,13 +130,20 @@ The error at the end is **normal** because we need to specify how to connect to 
 If You have logged previously, than You may not see that.
 
 
-### 5. Gain access to the cluster
+### 4. Gain access to the cluster
 
 Log into your IBM Cloud account if no already logged in.
 
 `ibmcloud login -a https://api.eu-gb.bluemix.net`
 
-> don't forget to `ibmcloud target -o ORG -s SPACE` where ORG is your email and SPACE is dev. Or use `ibmcloud target --cf` instead.
+
+Enter ibmcloud target command  **with Your** **email name** (the same as You've used for IBM Cloud account creation):
+
+`ibmcloud target -o <Your Email> -s dev`
+
+like:
+
+`ibmcloud target -o kari@dmailpro.net -s dev`
 
 **IMPORTANT : At this point, your cluster should have been started. Check in the IBM Cloud Console.**
 
@@ -245,7 +193,7 @@ NAME            STATUS   ROLES    AGE   VERSION
 
 
 
-# Task 3 : Creating a private registry
+# Task 2 : Creating a private registry
 
 Set up your own private image repository in IBM Cloud Container Registry to securely store and share Docker images with all cluster users. A private image repository in IBM Cloud is identified by a **namespace**. The namespace is used to create a unique URL to your image repository that developers can use to access private Docker images.
 
@@ -293,11 +241,15 @@ To test our new **private registry**, do the following steps:
 
 2. tag the hello-world image with a name containing your private registry name :
 
-`docker tag hello-world registry.eu-gb.bluemix.net/<my_namespace>/hello-world:latest`
+`docker tag hello-world uk.icr.io/<my_namespace>/hello-world:latest`
+like:
+`docker tag hello-world uk.icr.io/maciej-1975-nowak/hello-world:latest`
 
 3. push your image in the private registry
 
-`docker push registry.eu-gb.bluemix.net/<my_namespace>/hello-world:latest`
+`docker push uk.icr.io/<my_namespace>/hello-world:latest`
+like:
+`docker push uk.icr.io/maciej-1975-nowak/hello-world:latest`
 
 4. List the images in the private registry
 
@@ -318,7 +270,7 @@ OK
 
 
 
-# Task 4 : Deploying Apps with Kubernetes
+# Task 3 : Deploying Apps with Kubernetes
 
 
 
@@ -380,7 +332,13 @@ Build the image locally and tag it with the name that you want to use on the  ku
 
 `cd "container-service-getting-started-wt/Lab 1"`
 
+and than build the image:
+
 `docker build -t uk.icr.io/<your namespace>/hello1 .`
+
+like:
+
+`docker build -t uk.icr.io/maciej-1975-nowak/hello1 .`
 
 Output is:
 
@@ -429,7 +387,11 @@ uk.icr.io/maciej-1975-nowak/hello1   latest              b022e60e6a4e        24 
 
 Push your image into the private registry :
 
-`docker push uk.icr.io/<namespace>/hello1:latest`
+`docker push uk.icr.io/<Your Namespace>/hello1:latest`
+
+like:
+
+`docker push uk.icr.io/maciej-1979-nowak/hello1:latest`
 
  Your output should look like this.
 
@@ -449,7 +411,7 @@ latest: digest: sha256:b1740229e9b86efa538fb987a13d6e488501742c375e624c5deee4740
 
 
 
-IKS service needs a permission to connect to image rregistry. While it is usualkly provisioned properly, the accounts created in the past may have improper secrets set. We need to make sure they are OK...
+IKS service needs a permission to connect to image rregistry. While it is usually provisioned properly, the accounts created in the past may have improper secrets set. We need to make sure they are OK...
 
 Run following command to pull the secrets required for IKS to pull from the git
 
@@ -585,9 +547,25 @@ Or look at the dashboard:
 
 Your port may be different! Check it before!
 
-Open a Firefox browser window or tab and go to the URL of your node with your NodePort number, such as `http://159.122.181.117:32509`. Your output should look like this.
+Open a Firefox browser window or tab and go to the URL of your Kubernetes node (You should have noted it before) with your NodePort number, such as `http://159.122.181.117:32509`. Your output should look like this.
 
 ![Helloworld](../images/browser1.png)
+
+In case You've not noted the public IP it may be acquired via command line using kubectl command:
+
+`kubectl get nodes -o wide`
+
+output:
+
+```
+root@warsaw9101:~/started/container-service-getting-started-wt/Lab 1# kubectl get nodes -o wide
+
+NAME      STATUS  ROLES  AGE  VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE       KERNEL-VERSION   CONTAINER-RUNTIME
+
+10.76.199.223  Ready  <none>  24m  v1.14.9+IKS  10.76.199.223  184.172.234.24  Ubuntu 16.04.6 LTS  4.4.0-169-generic  containerd://1.2.10
+```
+
+In the example above the public IP is 184.172.234.24
 
 ### 10. Application troubleshooting 
 
@@ -741,7 +719,7 @@ You should see output listing 10 replicas of your deployment:
 
 Results :
 
-```bash
+```
 $ kubectl get pods
 NAME                                 READY     STATUS    RESTARTS   AGE
 hello1-deployment-864cd87c7f-675sr   1/1       Running   0          5m
@@ -754,7 +732,6 @@ hello1-deployment-864cd87c7f-mb5fw   1/1       Running   0          3m
 hello1-deployment-864cd87c7f-nwzr5   1/1       Running   0          3m
 hello1-deployment-864cd87c7f-vfnbl   1/1       Running   0          3m
 hello1-deployment-864cd87c7f-w7p6m   1/1       Running   0          3m
-
 ```
 
 ### 4. Rollout an update to  the application
@@ -857,7 +834,7 @@ Finally, use that command to see the result:
 
 Results:
 
-```bash
+​```bash
 $ kubectl get replicasets
 NAME                           DESIRED   CURRENT   READY     AGE
 hello1-deployment-864cd87c7f   0         0         0         23m

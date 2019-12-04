@@ -25,13 +25,13 @@ This set of instructions requires that docker is already installed and docker co
 
 Login to Your provisioned server. Use Your IP address, as reveived from IBM staff.
 
-```ssh root@158.176.128.252```
+``ssh root@<Your IP Address``
 
 Launch a shell or a command line and confirm that docker is installed.
 
 `docker version`
 
-Output:
+Output (version may differ, it's OK):
 
 ```console
 docker version
@@ -257,7 +257,7 @@ fd511f9cd896        couchdb             "tini -- /docker-ent…"   4 minutes ago
 
 The containers look similar, but they have unique names and unique ids. 
 
-Stop the most recent container and then check to see what's running.
+Stop the most recent container and then check to see what's running - use docker stop command with **Your CONTAINER ID, as returned by last command**:
 
 `docker stop fd511f9cd896 `
 
@@ -287,7 +287,7 @@ So we still have one running container.
 
 ### 11. Stop the other container
 
-Stop the other container and see what is running.
+Stop the other container and see what is running - use docker stop command with **Your CONTAINER ID, as returned by "docker ps" command**:
 
  `docker stop 272d409a806c`
 
@@ -363,7 +363,7 @@ fd511f9cd896        couchdb             "tini -- /docker-ent…"   21 minutes ag
 
 ### 15. How to remove the image
 
-Delete the stopped couchdb containers, delete the couchdb image, and make sure it is gone. You can leave hello-world.
+Delete the stopped couchdb containers, delete the couchdb image, and make sure it is gone. You can leave hello-world. Use "docker rm" command with **Your CONTAINER ID, as returned by "docker ps" command**:
 
 `docker rm fd511f9cd896 272d409a806c `
 Output:
@@ -481,17 +481,15 @@ Notice the various steps that the build process goes through to build out your i
 
 If you run a docker images command now, you will see the myimage image listed in the output as shown below:
 
-`docker images`
+`docker images | grep myimage`
 
 ```console
-> docker images
+> docker images | grep myimage
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 myimage             latest              e50f1efaafdc        4 minutes ago       1.2MB
-hello-world         latest              fce289e99eb9        3 weeks ago         1.84kB
-busybox             latest              3a093384ac30        3 weeks ago         1.2MB
 ```
 
-You can notice that we have pulled busybox image and created myimage ! The images are very tiny.
+You can notice that we have created myimage ! The images are very tiny.
 
 You can now launch a container, any time via the standard docker run command:
 
