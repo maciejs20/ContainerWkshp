@@ -8,7 +8,7 @@ version 1.5
 **Day One**
 + Introduction
 + Preparation Lab
-  + [1-PrepareLab/README.html](1-PrepareLab/README.html)
+  + [1-PrepareLab/README.md](1-PrepareLab/README.md)
 + Docker Overview
 + Docker **Lab** :
   + [2-DockerLab/README.md](2-DockerLab/README.md)
