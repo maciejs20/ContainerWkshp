@@ -834,7 +834,7 @@ Finally, use that command to see the result:
 
 Results:
 
-​```bash
+```bash
 $ kubectl get replicasets
 NAME                           DESIRED   CURRENT   READY     AGE
 hello1-deployment-864cd87c7f   0         0         0         23m
