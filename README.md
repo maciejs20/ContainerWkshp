@@ -2,6 +2,7 @@
 
 version 1.5
 
+This is a mod of fdescollonges (fdescollonges/fdescollonges.github.io) workshop on containers, modified for local needs
 
 ## Agenda
 
