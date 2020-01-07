@@ -1,23 +1,23 @@
 # IBM Cloud Containers Workshop
 
-version 1.5
+version 1.6
 
 
 ## Agenda
 
 **Day One**
 + Introduction
-+ Preparation Lab
++ Kubernetes Preparation **Lab**
   + [1-PrepareLab/README.md](1-PrepareLab/README.md)
-+ Docker Overview
++ Docker Overview - presentation
 + Docker **Lab** :
   + [2-DockerLab/README.md](2-DockerLab/README.md)
-
 + Orchestration and Kubernetes overview
-+ Openshift overview
-
 + IBM Cloud (Public) Container Service
   + Kubernetes **Lab** on IKS : [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
++ Openshift overview
+	+ Openshift **Lab** part 1:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md]
+	+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf]
 + IBM Cloud Pak for Applications overview
 + IBM Cloud Pak for Multicloud overview
   + Demo - multicloud application patterns
