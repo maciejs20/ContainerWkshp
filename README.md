@@ -19,8 +19,8 @@ Created by Maciej Szulc (maciej.szulc@pl.ibm.com) for Container/Kubernetes/Opens
 + IBM Cloud (Public) Container Service
   + Kubernetes **Lab** on IKS : [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
 + Openshift overview
-	+ Openshift **Lab** part 1:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md]
-	+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf]
+	+ Openshift **Lab** part 1:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md](https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md)
+	+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf](https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf)
 + Wrap Up
 
 **Day Two**
