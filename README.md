@@ -1,10 +1,13 @@
 # IBM Cloud Containers Workshop
 
-version 1.6
+version 1.65, 2020.01.09
 
-This is a mod of fdescollonges (fdescollonges/fdescollonges.github.io) workshop on containers, modified for local needs. Contains also efforts of Philippe Thomas.
+This is a Container/Kubernetes/Openshift workshop created for IBM Poland by Maciej Szulc (maciej.szulc@pl.ibm.com).
+This workshop also contains labs created by  Franck Descollonges (IBM) and Philippe Thomas (IBM).
 
-Created by Maciej Szulc (maciej.szulc@pl.ibm.com) for Container/Kubernetes/Openshift two day workshop.
+If You're interested in participating in this event, held monthly in Polish language in Warsaw, contact maciej.szulc@pl.ibm.com
+
+
 
 ## Agenda
 
