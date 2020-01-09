@@ -28,7 +28,6 @@ Created by Maciej Szulc (maciej.szulc@pl.ibm.com) for Container/Kubernetes/Opens
 + IBM Cloud Pak for Applications overview
 + IBM Cloud Pak for Multicloud overview
   + Demo - multicloud application patterns
-
 + Helm overview
 + Operators overview
   + Kubernetes & Helm **Lab** on ICP: [4-KubernetesHelmOnICP/README.md](4-KubernetesHelmOnICP/README.md)
@@ -38,7 +37,7 @@ Created by Maciej Szulc (maciej.szulc@pl.ibm.com) for Container/Kubernetes/Opens
   + Transformation Advisor
   + Devops : CI/CD
 + _DevOps **Lab**_
-  + Jenkins/Microclimate **Labs**: [6-MicroclimateAndJenkinsLab/README.md]6-MicroclimateAndJenkinsLab/README.md)
+  + Jenkins/Microclimate **Labs**: [6-MicroclimateAndJenkinsLab/README.md](6-MicroclimateAndJenkinsLab/README.md)
 
 + Wrap Up
 
