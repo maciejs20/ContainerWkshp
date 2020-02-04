@@ -7,7 +7,7 @@ This workshop also contains labs created by  Franck Descollonges (IBM) and Phili
 
 If You're interested in participating in this event, held monthly in Polish language in Warsaw, contact maciej.szulc@pl.ibm.com
 
-We do not distribute presentations used during the workshop.
+__We do not distribute presentations used during the workshop.__
 
 
 
@@ -20,24 +20,22 @@ We do not distribute presentations used during the workshop.
 + Docker Overview - presentation
 + Docker **Lab** :
   + [2-DockerLab/README.md](2-DockerLab/README.md)
-+ Orchestration and Kubernetes overview
++ Orchestration and Kubernetes overview - presentation
 + IBM Cloud (Public) Container Service
   + Kubernetes **Lab** on IKS : [3-KubernetesLabOnIKS/README.md](3-KubernetesLabOnIKS/README.md)
-+ Openshift overview
++ Openshift overview - presentation
 	+ Openshift **Lab** part 1:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md](https://github.com/maciejs20/openshift-labs/blob/master/Lab1/1-OpenShift-Lab.md)
-	+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf](https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf)
 + Wrap Up
 
 **Day Two**
-
-+ IBM Cloud Pak for Applications overview
-+ IBM Cloud Pak for Multicloud overview
-  + Demo - multicloud application patterns
-+ Helm overview
-+ Operators overview
++ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf](https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf)
++ IBM Cloud Pak for Applications overview - presentation
++ IBM Cloud Pak for Multicloud overview - presentation
+  + Multicloud application patterns - Demo
++ Helm and Operators overview - presentation
   + Kubernetes & Helm **Lab** on ICP: [4-KubernetesHelmOnICP/README.md](4-KubernetesHelmOnICP/README.md)
   + (Optional) Hybrid Cloud **Lab** [5-HybridCloudLab/README.md](5-HybridCloudLab/README.md)
-+ (Optional)_Application Patterns_
++ (Optional)_Application Patterns_ - presentation
   + MicroServices /Cloud Native Applications
   + Transformation Advisor
   + Devops : CI/CD
