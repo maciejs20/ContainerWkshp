@@ -7,7 +7,7 @@ This workshop also contains labs created by  Franck Descollonges (IBM) and Phili
 
 If You're interested in participating in this event, held monthly in Polish language in Warsaw, contact maciej.szulc@pl.ibm.com
 
-How to get workshop presentations: [Presentations-from-workshop.md](Presentations-from-workshop.md)
+We do not distribute presentations used during the workshop.
 
 
 
