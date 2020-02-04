@@ -28,7 +28,8 @@ __We do not distribute presentations used during the workshop.__
 + Wrap Up
 
 **Day Two**
-+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf](https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf)
++ Openshift overview
+	+ Openshift **Lab** part 2:  [https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf](https://github.com/maciejs20/openshift-labs/blob/master/Lab2/Openshift-S2I-v2.pdf)
 + IBM Cloud Pak for Applications overview - presentation
 + IBM Cloud Pak for Multicloud overview - presentation
   + Multicloud application patterns - Demo
