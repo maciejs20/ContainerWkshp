@@ -261,8 +261,6 @@ Listing images...
 
 Repository                                Tag      Digest         Namespace           Created        Size    Security status   
 uk.icr.io/maciej-1975-nowak/hello-world   latest   92c7f9c92844   maciej-1975-nowak   9 months ago   977 B   Unsupported OS   
-
-OK
 ```
 
 
