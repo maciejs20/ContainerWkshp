@@ -257,7 +257,7 @@ like:
 
 example:
 
-```bash root@warsaw901:~# ibmcloud cr image-list
+```bash 
 root@warsaw901:~# ibmcloud cr image-list
 Listing images...
 
