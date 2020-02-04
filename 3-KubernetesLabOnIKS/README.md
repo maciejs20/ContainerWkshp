@@ -255,7 +255,9 @@ like:
 
 `ibmcloud cr image-list`
 
-```root@warsaw901:~# ibmcloud cr image-list
+example:
+
+```bash root@warsaw901:~# ibmcloud cr image-list
 root@warsaw901:~# ibmcloud cr image-list
 Listing images...
 
