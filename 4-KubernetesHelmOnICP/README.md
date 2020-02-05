@@ -1236,13 +1236,14 @@ Then review the **service template**:
 `nano /root/hellonginx/templates/service.yaml`
 
 Change the **-port section** with the following code (don't introduce any TAB in the file):
-
-        - port: {{ .Values.service.externalPort }}
-          targetPort: {{ .Values.service.internalPort }}
-          protocol: TCP
-          nodePort: {{ .Values.service.nodePort }}
-          name: {{ .Values.service.name }}
-> **Notice :** There is 3 ports to define when using nodePort
+```
+    - port: {{ .Values.service.externalPort }}
+      targetPort: {{ .Values.service.internalPort }}
+      protocol: TCP
+      nodePort: {{ .Values.service.nodePort }}
+      name: {{ .Values.service.name }}
+```
+**Notice :** There is 3 ports to define when using nodePort
 
 So the service should look as follows:
 
