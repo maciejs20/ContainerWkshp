@@ -34,7 +34,7 @@ __We do not distribute presentations used during the workshop.__
 + IBM Cloud Pak for Multicloud overview (**presentation**)
   + Multicloud application patterns (**Demo**)
 + Helm and Operators overview (**presentation**)
-  + Kubernetes & Helm on ICP(**Lab**): [4-KubernetesHelmOnICP/README.md](4-KubernetesHelmOnICP/README.md)
+  + Kubernetes & Helm on ICP(**Lab**): [https://github.com/maciejs20/ContainerWkshp/tree/master/4-KubernetesHelmOnICP](https://github.com/maciejs20/ContainerWkshp/tree/master/4-KubernetesHelmOnICP)
   + (Optional) Hybrid Cloud (**Lab**) [5-HybridCloudLab/README.md](5-HybridCloudLab/README.md)
 + (Optional)_Application Patterns_ (**presentation**)
   + MicroServices /Cloud Native Applications
