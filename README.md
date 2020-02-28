@@ -1,6 +1,6 @@
 # IBM Cloud Containers Workshop
 
-version 1.67, 2020.02.04
+version 2.0 2020.02.28
 
 This is a Container/Kubernetes/Openshift workshop created for IBM Poland by Maciej Szulc (maciej.szulc@pl.ibm.com).
 This workshop also contains labs created by  Franck Descollonges (IBM) and Philippe Thomas (IBM).
